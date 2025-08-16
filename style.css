@@ -176,11 +176,12 @@ nav {
 }
 
 .nav__link--anchor {
+    text-decoration: none;
     font-size: 16px;
     color: #242424;
     font-weight: 700;
 }
 
-.fa-solid {
+.fa-adjust {
     font-size: 20px;
 }
