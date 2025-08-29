@@ -43,7 +43,7 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -67,7 +67,7 @@
             I'm a <b class="orange">Frontend Software Engineer</b> with a strong
             passions with great user experiences.
             <br />
-            Here's a bit more <b class="orange">about me</b>.
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -94,7 +94,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -129,6 +129,7 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -138,15 +139,15 @@
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text" ></input>
+              <input class="input" name="user_name" type="text" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email" ></input>
+              <input class="input" name="user_email" type="email" required></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea class="input" name="message" type="text" ></textarea>
+              <textarea class="input" name="message" type="text" required></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way
@@ -159,7 +160,6 @@
             Thank's for the message! Looking forward to speaking to you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
