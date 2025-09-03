@@ -291,10 +291,12 @@ nav {
     display: flex;
     visibility: hidden;
     z-index: -1;
-    transition: visibility 1s, z-indez, box-shadow 0.5s ease;
+    transition: opacity .4s ease, visibility .4s, z-indez .4s, box-shadow 0.5s ease;
+    opacity: 0;
 }
 
 .modal--open .modal {
+    opacity: 1;
     z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
